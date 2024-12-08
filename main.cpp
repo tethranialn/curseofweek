@@ -112,7 +112,9 @@ void main(void)
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 {
 	int number;
+	unsigned i; char s = '!'; float tmp;
 	inputFile >> number;
+	//checking number of points 
 	if (inputFile.eof())
 	{
 		return -2;
@@ -125,14 +127,39 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 	{
 		return 0;
 	}
-	else if (number > N)
-	{
-		big_number = number;
-		number = N;
-		return number;
-	}
+	//programm will work
 	else
 	{
+		if (number > N)
+		{
+			big_number = number;
+			number = N;
+		}
+		//хз
+		for (i = 0; i < number; i++)
+		{
+			inputFile << skipws;
+			inputFile >> x[i]; cout << x[i];
+			if (inputFile.eof())
+			{
+			//реакция на конец файла
+			}
+			inputFile << noskipws;
+			while ((s==' ' || s=='\t') && !inputFile.eof() && s != '\n') inputFile >> s;
+			if (s == '\n')
+			{
+			//реакция на то, что есть только х
+			}
+			s = '!';
+			inputFile << skipws;
+			inputFile >> y[i];  cout << y[i];
+			if (inputFile.eof())
+			{
+			//реакция на конец файла
+			}
+			inputFile << noskipws;
+			while (!inputFile.eof() && s != '\n') inputFile >> s;
+		}
 		return number;
 	}
 	return -3;
