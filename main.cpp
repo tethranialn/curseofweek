@@ -112,7 +112,7 @@ void main(void)
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 {
 	int number;
-	unsigned i; char s = '!'; float tmp;
+	unsigned i = 0; char s = '!'; float tmp_x, tmp_y; bool read = true;
 	inputFile >> number;
 	//checking number of points 
 	if (inputFile.eof())
@@ -136,29 +136,52 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 			number = N;
 		}
 		//хз
-		for (i = 0; i < number; i++)
+		while(i < number)
 		{
 			inputFile << skipws;
-			inputFile >> x[i]; cout << x[i];
+			if (read!=false) inputFile >> tmp_x;
 			if (inputFile.eof())
 			{
 			//реакция на конец файла
+				return number;
 			}
-			inputFile << noskipws;
-			while ((s==' ' || s=='\t') && !inputFile.eof() && s != '\n') inputFile >> s;
-			if (s == '\n')
+			else
 			{
-			//реакция на то, что есть только х
+				inputFile << noskipws;
+				while (s == ' ' || s == '\t') inputFile >> s;
+				if (s == '\n')
+				{
+					//реакция на то, что есть только х
+					read = false;
+					break;
+				}
+				else if (inputFile.eof())
+				{
+					//реакция на то, что есть только х
+					return number;;
+				}
+				else
+				{
+					//inputFile.seekg(-1, ios::cur);
+					s = '!';
+					inputFile << skipws;
+					inputFile >> tmp_y;
+					if (inputFile.eof())
+					{
+						//реакция на конец файла
+						return number;
+					}
+					else
+					{
+						x[i] = tmp_x;
+						y[i] = tmp_y;
+						cout << x[i] << ' ' << y[i] << '\n';
+						i++;
+						//inputFile << noskipws;
+						//while (!inputFile.eof() || s != '\n') inputFile >> s;
+					}
+				}
 			}
-			s = '!';
-			inputFile << skipws;
-			inputFile >> y[i];  cout << y[i];
-			if (inputFile.eof())
-			{
-			//реакция на конец файла
-			}
-			inputFile << noskipws;
-			while (!inputFile.eof() && s != '\n') inputFile >> s;
 		}
 		return number;
 	}
