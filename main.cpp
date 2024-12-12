@@ -6,11 +6,12 @@
 using namespace std;
 const unsigned N = 50;
 
-int readFile(fstream& inputFile, float x[N], float y[N], int& big_number);
+int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& real_number, int& number);
+int process(float x[N], float y[N], int& result, int real_number);
 void main(void)
 {
 	fstream inputFile;
-	float x[N], y[N]; char tryAgain = '!'; unsigned file; bool fileSelected = false; int big_number = 0;
+	float x[N], y[N]; char tryAgain = '!'; unsigned file; bool fileSelected = false; int big_number = 0, real_number = 0, number = 0, result = 0;
 	//file selection
 	while (fileSelected != true)
 	{
@@ -79,7 +80,7 @@ void main(void)
 		return;
 	}
 	//checking number of points 
-	switch (readFile(inputFile, x, y, big_number))
+	switch (readFile(inputFile, x, y, big_number, real_number, number))
 	{
 	case 0:
 	{
@@ -106,12 +107,15 @@ void main(void)
 	{
 		cout << "specified number of points (" << big_number << ") has been reduced to " << N << '\n';
 	}
+	cout << "readed number of points: " << number << '\n';
+	cout << "real number of points: " << real_number << '\n';
+	//process
+	process(x, y, result, real_number);
 	cout << "Hello world!";
 	inputFile.close();
 }
-int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
+int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& real_number, int& number)
 {
-	int number;
 	unsigned i = 0; char s = '!'; float tmp_x, tmp_y;
 	inputFile >> number;
 	//checking number of points 
@@ -176,6 +180,7 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 						y[i] = tmp_y;
 						cout << i+1 << ".\t" << x[i] << ' ' << y[i] << '\n';
 						i++;
+						real_number = i;
 						inputFile << noskipws;
 						while (!inputFile.eof() && s != '\n') inputFile >> s;
 						s = '!';
@@ -186,4 +191,8 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 		return number;
 	}
 	return -3;
+}
+int process(float x[N], float y[N], int& result, int real_number)
+{
+	return result;
 }
