@@ -4,7 +4,7 @@
 #include <fstream>;
 
 using namespace std;
-const unsigned N = 100;
+const unsigned N = 50;
 
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number);
 void main(void)
@@ -112,7 +112,7 @@ void main(void)
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 {
 	int number;
-	unsigned i = 0; char s = '!'; float tmp_x, tmp_y; bool read = true;
+	unsigned i = 0; char s = '!'; float tmp_x, tmp_y;
 	inputFile >> number;
 	//checking number of points 
 	if (inputFile.eof())
@@ -135,11 +135,10 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 			big_number = number;
 			number = N;
 		}
-		//хз
 		while(i < number)
 		{
 			inputFile << skipws;
-			if (read!=false) inputFile >> tmp_x;
+			inputFile >> tmp_x;
 			if (inputFile.eof())
 			{
 			//реакция на конец файла
@@ -148,12 +147,12 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 			else
 			{
 				inputFile << noskipws;
-				while (s == ' ' || s == '\t') inputFile >> s;
+				do inputFile >> s;
+				while (s == ' ' || s == '\t');
 				if (s == '\n')
 				{
 					//реакция на то, что есть только х
-					read = false;
-					break;
+					continue;
 				}
 				else if (inputFile.eof())
 				{
@@ -162,7 +161,7 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 				}
 				else
 				{
-					//inputFile.seekg(-1, ios::cur);
+					inputFile.seekg(-1, ios::cur);
 					s = '!';
 					inputFile << skipws;
 					inputFile >> tmp_y;
@@ -175,10 +174,11 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number)
 					{
 						x[i] = tmp_x;
 						y[i] = tmp_y;
-						cout << x[i] << ' ' << y[i] << '\n';
+						cout << i+1 << ".\t" << x[i] << ' ' << y[i] << '\n';
 						i++;
-						//inputFile << noskipws;
-						//while (!inputFile.eof() || s != '\n') inputFile >> s;
+						inputFile << noskipws;
+						while (!inputFile.eof() && s != '\n') inputFile >> s;
+						s = '!';
 					}
 				}
 			}
