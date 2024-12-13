@@ -221,5 +221,6 @@ void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000
 }
 int process(float XP[100000][3], float YP[100000][3], int& result)
 {
+
 	return 0;
 }
