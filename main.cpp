@@ -7,13 +7,13 @@ using namespace std;
 const unsigned N = 50;
 
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& real_number, int& number);
-void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000][3], int real_number, int& index);
-int process(float XP[10000][3], float YP[10000][3], int& result, int index);
+void pointsCreation(float x[N], float y[N], long double XP[100000][3], long double YP[100000][3], int real_number, int& index);
+int process(long double XP[10000][3], long double YP[10000][3], int& result, int index);
 double distance(double x1, double y1, double x2, double y2);
 void main(void)
 {
 	fstream inputFile;
-	float x[N], y[N], XP[10000][3], YP[10000][3]; char tryAgain = '!'; unsigned file; bool fileSelected = false;
+	float x[N], y[N]; long double  XP[10000][3], YP[10000][3]; char tryAgain = '!'; unsigned file; bool fileSelected = false;
 	int big_number = 0, real_number = 0, number = 0, result = 0, index = 0;
 	//file selection
 	while (fileSelected != true)
@@ -196,7 +196,7 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& r
 	}
 	return -3;
 }
-void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000][3], int real_number, int& index)
+void pointsCreation(float x[N], float y[N], long double XP[100000][3], long double YP[100000][3], int real_number, int& index)
 {
 	int i, j, k;
 	for (i = 0; i < real_number; i++)
@@ -221,7 +221,7 @@ void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000
 	}
 	return;
 }
-int process(float XP[10000][3], float YP[10000][3], int& result, int index)
+int process(long double XP[10000][3], long double YP[10000][3], int& result, int index)
 {
 	int longest, x, y, z, i;
 	
