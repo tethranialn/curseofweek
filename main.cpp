@@ -7,12 +7,14 @@ using namespace std;
 const unsigned N = 50;
 
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& real_number, int& number);
-void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000][3], int real_number);
-int process(float XP[100000][3], float YP[100000][3], int& result);
+void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000][3], int real_number, int& index);
+int process(float XP[10000][3], float YP[10000][3], int& result, int index);
+double distance(double x1, double y1, double x2, double y2);
 void main(void)
 {
 	fstream inputFile;
-	float x[N], y[N], XP[10000][3], YP[10000][3]; char tryAgain = '!'; unsigned file; bool fileSelected = false; int big_number = 0, real_number = 0, number = 0, result = 0;
+	float x[N], y[N], XP[10000][3], YP[10000][3]; char tryAgain = '!'; unsigned file; bool fileSelected = false;
+	int big_number = 0, real_number = 0, number = 0, result = 0, index = 0;
 	//file selection
 	while (fileSelected != true)
 	{
@@ -111,9 +113,9 @@ void main(void)
 	cout << "readed number of points: " << number << '\n';
 	cout << "real number of points: " << real_number << '\n';
 	//process
-	pointsCreation(x, y, XP, YP, real_number);
-	process(XP, YP, result);
-	cout << "Hello world!";
+	pointsCreation(x, y, XP, YP, real_number, index);
+	process(XP, YP, result, index);
+	cout << "number of acute-angled triangles:" << result;
 	inputFile.close();
 }
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& real_number, int& number)
@@ -194,9 +196,9 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& r
 	}
 	return -3;
 }
-void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000][3], int real_number)
+void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000][3], int real_number, int& index)
 {
-	int i, j, k, index = 0;
+	int i, j, k;
 	for (i = 0; i < real_number; i++)
 	{
 		for (j = i + 1; j < real_number; j++)
@@ -215,12 +217,39 @@ void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000
 	}
 	cout << endl;
 	for (i = 0; i < index; i++) {
-		cout << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
+		cout << i+1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
 	}
 	return;
 }
-int process(float XP[100000][3], float YP[100000][3], int& result)
+int process(float XP[10000][3], float YP[10000][3], int& result, int index)
 {
-
+	int longest, x, y, z, i;
+	
+	for (i = 0; i < index; i++)
+	{
+		x = distance(XP[i][0], YP[i][0], XP[i][1], YP[i][1]);
+		y = distance(XP[i][1], YP[i][1], XP[i][2], YP[i][2]);
+		z = distance(XP[i][2], YP[i][2], XP[i][0], YP[i][0]);
+		longest = z;
+		if (longest < x) {
+			z = longest;
+			longest = x;
+			x = z;
+		}
+		if (longest < y) {
+			z = longest;
+			longest = y;
+			y = z;
+		}
+		if (x * x + y * y > longest * longest) {
+			cout << i + 1 << ".\t" << "This is an acute-angled triangle.\n";
+			result++;
+		}
+		else cout << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
+	}
 	return 0;
+}
+double distance(double x1, double y1, double x2, double y2)
+{
+	return sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2));
 }
