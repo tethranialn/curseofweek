@@ -7,11 +7,12 @@ using namespace std;
 const unsigned N = 50;
 
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& real_number, int& number);
-int process(float x[N], float y[N], int& result, int real_number);
+void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000][3], int real_number);
+int process(float XP[100000][3], float YP[100000][3], int& result);
 void main(void)
 {
 	fstream inputFile;
-	float x[N], y[N]; char tryAgain = '!'; unsigned file; bool fileSelected = false; int big_number = 0, real_number = 0, number = 0, result = 0;
+	float x[N], y[N], XP[10000][3], YP[10000][3]; char tryAgain = '!'; unsigned file; bool fileSelected = false; int big_number = 0, real_number = 0, number = 0, result = 0;
 	//file selection
 	while (fileSelected != true)
 	{
@@ -110,13 +111,14 @@ void main(void)
 	cout << "readed number of points: " << number << '\n';
 	cout << "real number of points: " << real_number << '\n';
 	//process
-	process(x, y, result, real_number);
+	pointsCreation(x, y, XP, YP, real_number);
+	process(XP, YP, result);
 	cout << "Hello world!";
 	inputFile.close();
 }
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& real_number, int& number)
 {
-	unsigned i = 0; char s = '!'; float tmp_x, tmp_y;
+	int i = 0; char s = '!'; float tmp_x, tmp_y;
 	inputFile >> number;
 	//checking number of points 
 	if (inputFile.eof())
@@ -192,7 +194,32 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& r
 	}
 	return -3;
 }
-int process(float x[N], float y[N], int& result, int real_number)
+void pointsCreation(float x[N], float y[N], float XP[100000][3], float YP[100000][3], int real_number)
 {
-	return result;
+	int i, j, k, index = 0;
+	for (i = 0; i < real_number; i++)
+	{
+		for (j = i + 1; j < real_number; j++)
+		{
+			for (k = j + 1; k < real_number; k++)
+			{
+				XP[index][0] = x[i];
+				XP[index][1] = x[j];
+				XP[index][2] = x[k];
+				YP[index][0] = y[i];
+				YP[index][1] = y[j];
+				YP[index][2] = y[k];
+				index++;
+			}
+		}
+	}
+	cout << endl;
+	for (i = 0; i < index; i++) {
+		cout << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
+	}
+	return;
+}
+int process(float XP[100000][3], float YP[100000][3], int& result)
+{
+	return 0;
 }
