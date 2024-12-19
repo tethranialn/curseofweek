@@ -5,6 +5,8 @@
 
 using namespace std;
 const unsigned N = 50;
+fstream fresult, fprotocol;
+bool P[10000];
 
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& real_number, int& number);
 void pointsCreation(float x[N], float y[N], long double XP[100000][3], long double YP[100000][3], int real_number, int& index);
@@ -14,7 +16,20 @@ void main(void)
 {
 	fstream inputFile;
 	float x[N], y[N]; long double  XP[10000][3], YP[10000][3]; char tryAgain = '!'; unsigned file; bool fileSelected = false;
-	int big_number = 0, real_number = 0, number = 0, result = 0, index = 0;
+	int big_number = 0, real_number = 0, number = 0, result = 0, index = 0, i, j = 0;
+	fresult.open("result.txt", ios::out);
+	fprotocol.open("protocol.txt", ios::out);
+	if (!fprotocol.is_open())
+	{
+		cout << "protocol file is not open or does not exist. please, restart the programm";
+		return;
+	}
+	if (!fresult.is_open())
+	{
+		cout << "result file is not open or does not exist. please, restart the programm";
+		fprotocol << "result file is not open or does not exist. please, restart the programm";
+		return;
+	}
 	//file selection
 	while (fileSelected != true)
 	{
@@ -33,36 +48,42 @@ void main(void)
 		{
 			inputFile.open("in.txt", ios::in);
 			fileSelected = true;
+			fprotocol << "selected file: in.txt\n";
 			break;
 		}
 		case 1:
 		{
 			inputFile.open("in1.txt", ios::in);
 			fileSelected = true;
+			fprotocol << "selected file: in1.txt\n";
 			break;
 		}
 		case 2:
 		{
 			inputFile.open("in2.txt", ios::in);
 			fileSelected = true;
+			fprotocol << "selected file: in2.txt\n";
 			break;
 		}
 		case 3:
 		{
 			inputFile.open("in3.txt", ios::in);
 			fileSelected = true;
+			fprotocol << "selected file: in3.txt\n";
 			break;
 		}
 		case 4:
 		{
 			inputFile.open("in4.txt", ios::in);
 			fileSelected = true;
+			fprotocol << "selected file: in4.txt\n";
 			break;
 		}
 		case 5: 
 		{
 			inputFile.open("in5.txt", ios::in);
 			fileSelected = true;
+			fprotocol << "selected file: in5.txt\n";
 			break;
 		}
 		default:
@@ -80,6 +101,7 @@ void main(void)
 	if (!inputFile.is_open())
 	{
 		cout << "this file is not open or does not exist. please, restart the programm";
+		fprotocol << "this file is not open or does not exist. please, restart the programm";
 		return;
 	}
 	//checking number of points 
@@ -88,34 +110,52 @@ void main(void)
 	case 0:
 	{
 		cout << "since the number of points is zero, programm cannot be executed";
+		fprotocol << "since the number of points is zero, programm cannot be executed";
 		return;
 	}
 	case -1:
 	{
 		cout << "the number of points cannot be less than zero";
+		fprotocol << "the number of points cannot be less than zero";
 		return;
 	}
 	case -2:
 	{
 		cout << "file is empty";
+		fprotocol << "file is empty";
 		return;
 	}
 	case -3:
 	{
 		cout << "file reading error";
+		fprotocol << "file reading error";
 		return;
 	}
 	}
 	if (big_number != 0)
 	{
 		cout << "specified number of points (" << big_number << ") has been reduced to " << N << '\n';
+		fprotocol << "specified number of points (" << big_number << ") has been reduced to " << N << '\n';
 	}
 	cout << "readed number of points: " << number << '\n';
 	cout << "real number of points: " << real_number << '\n';
+	fprotocol << "readed number of points: " << number << '\n';
+	fprotocol << "real number of points: " << real_number << '\n';
 	//process
 	pointsCreation(x, y, XP, YP, real_number, index);
 	process(XP, YP, result, index);
 	cout << "number of acute-angled triangles:" << result;
+	fprotocol << "number of acute-angled triangles:" << result;
+	fresult << "number of acute-angled triangles:" << result << '\n';
+	fresult << "acute-angled triangles:\n";
+	for (i = 0; i < index; i++)
+	{
+		if (P[i] == true)
+		{
+			j++;
+			fresult << setw(2) << left << j << " (" << setw(3) << i << ")." << right << "\t1." << '(' << setw(7) << left << XP[i][0] << ";" << setw(7) << right << YP[i][0] << ')' << "\t2." << '(' << setw(7) << left << XP[i][1] << ";" << setw(7) << right << YP[i][1] << ')' << "\t3." << '(' << setw(7) << left << XP[i][2] << ";" << setw(7) << right << YP[i][2] << ')' << endl;
+		}
+	}
 	inputFile.close();
 }
 int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& real_number, int& number)
@@ -149,7 +189,7 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& r
 			inputFile >> tmp_x;
 			if (inputFile.eof())
 			{
-			//реакция на конец файла
+				fprotocol << "end of inputFile\n";
 				return number;
 			}
 			else
@@ -160,11 +200,13 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& r
 				if (s == '\n')
 				{
 					//реакция на то, что есть только х
+					fprotocol << "there is no paired coordinate for x (" << tmp_x << ")\n";
 					continue;
 				}
 				else if (inputFile.eof())
 				{
 					//реакция на то, что есть только х
+					fprotocol << "there is no paired coordinate for x (" << tmp_x << ")\n";
 					return number;;
 				}
 				else
@@ -176,6 +218,7 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& r
 					if (inputFile.eof())
 					{
 						//реакция на конец файла
+						fprotocol << "end of inputFile\n";
 						return number;
 					}
 					else
@@ -183,6 +226,7 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& r
 						x[i] = tmp_x;
 						y[i] = tmp_y;
 						cout << i+1 << ".\t" << x[i] << ' ' << y[i] << '\n';
+						fprotocol << i + 1 << ".\t" << x[i] << ' ' << y[i] << '\n';
 						i++;
 						real_number = i;
 						inputFile << noskipws;
@@ -218,6 +262,7 @@ void pointsCreation(float x[N], float y[N], long double XP[100000][3], long doub
 	cout << endl;
 	for (i = 0; i < index; i++) {
 		cout << i+1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
+		fprotocol << i + 1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
 	}
 	return;
 }
@@ -243,9 +288,16 @@ int process(long double XP[10000][3], long double YP[10000][3], int& result, int
 		}
 		if (x * x + y * y > longest * longest) {
 			cout << i + 1 << ".\t" << "This is an acute-angled triangle.\n";
+			fprotocol << i + 1 << ".\t" << "This is an acute-angled triangle.\n";
+			P[i] = true;
 			result++;
 		}
-		else cout << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
+		else
+		{
+			cout << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
+			fprotocol << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
+			P[i] = false;
+		}
 	}
 	return 0;
 }

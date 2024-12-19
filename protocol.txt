@@ -1,0 +1,459 @@
+selected file: in.txt
+1.	872 -98
+there is no paired coordinate for x (4.32)
+there is no paired coordinate for x (67)
+2.	0 1
+3.	78 7
+4.	-93 0.9084
+5.	56 0.45
+6.	2 3
+7.	-1 -34
+8.	78 3
+9.	-23 0.5
+10.	2 2
+11.	59 -10
+12.	0.45 -12.973
+end of inputFile
+readed number of points: 20
+real number of points: 12
+1.	872 -98		0 1		78 7
+2.	872 -98		0 1		-93 0.9084
+3.	872 -98		0 1		56 0.45
+4.	872 -98		0 1		2 3
+5.	872 -98		0 1		-1 -34
+6.	872 -98		0 1		78 3
+7.	872 -98		0 1		-23 0.5
+8.	872 -98		0 1		2 2
+9.	872 -98		0 1		59 -10
+10.	872 -98		0 1		0.45 -12.973
+11.	872 -98		78 7		-93 0.9084
+12.	872 -98		78 7		56 0.45
+13.	872 -98		78 7		2 3
+14.	872 -98		78 7		-1 -34
+15.	872 -98		78 7		78 3
+16.	872 -98		78 7		-23 0.5
+17.	872 -98		78 7		2 2
+18.	872 -98		78 7		59 -10
+19.	872 -98		78 7		0.45 -12.973
+20.	872 -98		-93 0.9084		56 0.45
+21.	872 -98		-93 0.9084		2 3
+22.	872 -98		-93 0.9084		-1 -34
+23.	872 -98		-93 0.9084		78 3
+24.	872 -98		-93 0.9084		-23 0.5
+25.	872 -98		-93 0.9084		2 2
+26.	872 -98		-93 0.9084		59 -10
+27.	872 -98		-93 0.9084		0.45 -12.973
+28.	872 -98		56 0.45		2 3
+29.	872 -98		56 0.45		-1 -34
+30.	872 -98		56 0.45		78 3
+31.	872 -98		56 0.45		-23 0.5
+32.	872 -98		56 0.45		2 2
+33.	872 -98		56 0.45		59 -10
+34.	872 -98		56 0.45		0.45 -12.973
+35.	872 -98		2 3		-1 -34
+36.	872 -98		2 3		78 3
+37.	872 -98		2 3		-23 0.5
+38.	872 -98		2 3		2 2
+39.	872 -98		2 3		59 -10
+40.	872 -98		2 3		0.45 -12.973
+41.	872 -98		-1 -34		78 3
+42.	872 -98		-1 -34		-23 0.5
+43.	872 -98		-1 -34		2 2
+44.	872 -98		-1 -34		59 -10
+45.	872 -98		-1 -34		0.45 -12.973
+46.	872 -98		78 3		-23 0.5
+47.	872 -98		78 3		2 2
+48.	872 -98		78 3		59 -10
+49.	872 -98		78 3		0.45 -12.973
+50.	872 -98		-23 0.5		2 2
+51.	872 -98		-23 0.5		59 -10
+52.	872 -98		-23 0.5		0.45 -12.973
+53.	872 -98		2 2		59 -10
+54.	872 -98		2 2		0.45 -12.973
+55.	872 -98		59 -10		0.45 -12.973
+56.	0 1		78 7		-93 0.9084
+57.	0 1		78 7		56 0.45
+58.	0 1		78 7		2 3
+59.	0 1		78 7		-1 -34
+60.	0 1		78 7		78 3
+61.	0 1		78 7		-23 0.5
+62.	0 1		78 7		2 2
+63.	0 1		78 7		59 -10
+64.	0 1		78 7		0.45 -12.973
+65.	0 1		-93 0.9084		56 0.45
+66.	0 1		-93 0.9084		2 3
+67.	0 1		-93 0.9084		-1 -34
+68.	0 1		-93 0.9084		78 3
+69.	0 1		-93 0.9084		-23 0.5
+70.	0 1		-93 0.9084		2 2
+71.	0 1		-93 0.9084		59 -10
+72.	0 1		-93 0.9084		0.45 -12.973
+73.	0 1		56 0.45		2 3
+74.	0 1		56 0.45		-1 -34
+75.	0 1		56 0.45		78 3
+76.	0 1		56 0.45		-23 0.5
+77.	0 1		56 0.45		2 2
+78.	0 1		56 0.45		59 -10
+79.	0 1		56 0.45		0.45 -12.973
+80.	0 1		2 3		-1 -34
+81.	0 1		2 3		78 3
+82.	0 1		2 3		-23 0.5
+83.	0 1		2 3		2 2
+84.	0 1		2 3		59 -10
+85.	0 1		2 3		0.45 -12.973
+86.	0 1		-1 -34		78 3
+87.	0 1		-1 -34		-23 0.5
+88.	0 1		-1 -34		2 2
+89.	0 1		-1 -34		59 -10
+90.	0 1		-1 -34		0.45 -12.973
+91.	0 1		78 3		-23 0.5
+92.	0 1		78 3		2 2
+93.	0 1		78 3		59 -10
+94.	0 1		78 3		0.45 -12.973
+95.	0 1		-23 0.5		2 2
+96.	0 1		-23 0.5		59 -10
+97.	0 1		-23 0.5		0.45 -12.973
+98.	0 1		2 2		59 -10
+99.	0 1		2 2		0.45 -12.973
+100.	0 1		59 -10		0.45 -12.973
+101.	78 7		-93 0.9084		56 0.45
+102.	78 7		-93 0.9084		2 3
+103.	78 7		-93 0.9084		-1 -34
+104.	78 7		-93 0.9084		78 3
+105.	78 7		-93 0.9084		-23 0.5
+106.	78 7		-93 0.9084		2 2
+107.	78 7		-93 0.9084		59 -10
+108.	78 7		-93 0.9084		0.45 -12.973
+109.	78 7		56 0.45		2 3
+110.	78 7		56 0.45		-1 -34
+111.	78 7		56 0.45		78 3
+112.	78 7		56 0.45		-23 0.5
+113.	78 7		56 0.45		2 2
+114.	78 7		56 0.45		59 -10
+115.	78 7		56 0.45		0.45 -12.973
+116.	78 7		2 3		-1 -34
+117.	78 7		2 3		78 3
+118.	78 7		2 3		-23 0.5
+119.	78 7		2 3		2 2
+120.	78 7		2 3		59 -10
+121.	78 7		2 3		0.45 -12.973
+122.	78 7		-1 -34		78 3
+123.	78 7		-1 -34		-23 0.5
+124.	78 7		-1 -34		2 2
+125.	78 7		-1 -34		59 -10
+126.	78 7		-1 -34		0.45 -12.973
+127.	78 7		78 3		-23 0.5
+128.	78 7		78 3		2 2
+129.	78 7		78 3		59 -10
+130.	78 7		78 3		0.45 -12.973
+131.	78 7		-23 0.5		2 2
+132.	78 7		-23 0.5		59 -10
+133.	78 7		-23 0.5		0.45 -12.973
+134.	78 7		2 2		59 -10
+135.	78 7		2 2		0.45 -12.973
+136.	78 7		59 -10		0.45 -12.973
+137.	-93 0.9084		56 0.45		2 3
+138.	-93 0.9084		56 0.45		-1 -34
+139.	-93 0.9084		56 0.45		78 3
+140.	-93 0.9084		56 0.45		-23 0.5
+141.	-93 0.9084		56 0.45		2 2
+142.	-93 0.9084		56 0.45		59 -10
+143.	-93 0.9084		56 0.45		0.45 -12.973
+144.	-93 0.9084		2 3		-1 -34
+145.	-93 0.9084		2 3		78 3
+146.	-93 0.9084		2 3		-23 0.5
+147.	-93 0.9084		2 3		2 2
+148.	-93 0.9084		2 3		59 -10
+149.	-93 0.9084		2 3		0.45 -12.973
+150.	-93 0.9084		-1 -34		78 3
+151.	-93 0.9084		-1 -34		-23 0.5
+152.	-93 0.9084		-1 -34		2 2
+153.	-93 0.9084		-1 -34		59 -10
+154.	-93 0.9084		-1 -34		0.45 -12.973
+155.	-93 0.9084		78 3		-23 0.5
+156.	-93 0.9084		78 3		2 2
+157.	-93 0.9084		78 3		59 -10
+158.	-93 0.9084		78 3		0.45 -12.973
+159.	-93 0.9084		-23 0.5		2 2
+160.	-93 0.9084		-23 0.5		59 -10
+161.	-93 0.9084		-23 0.5		0.45 -12.973
+162.	-93 0.9084		2 2		59 -10
+163.	-93 0.9084		2 2		0.45 -12.973
+164.	-93 0.9084		59 -10		0.45 -12.973
+165.	56 0.45		2 3		-1 -34
+166.	56 0.45		2 3		78 3
+167.	56 0.45		2 3		-23 0.5
+168.	56 0.45		2 3		2 2
+169.	56 0.45		2 3		59 -10
+170.	56 0.45		2 3		0.45 -12.973
+171.	56 0.45		-1 -34		78 3
+172.	56 0.45		-1 -34		-23 0.5
+173.	56 0.45		-1 -34		2 2
+174.	56 0.45		-1 -34		59 -10
+175.	56 0.45		-1 -34		0.45 -12.973
+176.	56 0.45		78 3		-23 0.5
+177.	56 0.45		78 3		2 2
+178.	56 0.45		78 3		59 -10
+179.	56 0.45		78 3		0.45 -12.973
+180.	56 0.45		-23 0.5		2 2
+181.	56 0.45		-23 0.5		59 -10
+182.	56 0.45		-23 0.5		0.45 -12.973
+183.	56 0.45		2 2		59 -10
+184.	56 0.45		2 2		0.45 -12.973
+185.	56 0.45		59 -10		0.45 -12.973
+186.	2 3		-1 -34		78 3
+187.	2 3		-1 -34		-23 0.5
+188.	2 3		-1 -34		2 2
+189.	2 3		-1 -34		59 -10
+190.	2 3		-1 -34		0.45 -12.973
+191.	2 3		78 3		-23 0.5
+192.	2 3		78 3		2 2
+193.	2 3		78 3		59 -10
+194.	2 3		78 3		0.45 -12.973
+195.	2 3		-23 0.5		2 2
+196.	2 3		-23 0.5		59 -10
+197.	2 3		-23 0.5		0.45 -12.973
+198.	2 3		2 2		59 -10
+199.	2 3		2 2		0.45 -12.973
+200.	2 3		59 -10		0.45 -12.973
+201.	-1 -34		78 3		-23 0.5
+202.	-1 -34		78 3		2 2
+203.	-1 -34		78 3		59 -10
+204.	-1 -34		78 3		0.45 -12.973
+205.	-1 -34		-23 0.5		2 2
+206.	-1 -34		-23 0.5		59 -10
+207.	-1 -34		-23 0.5		0.45 -12.973
+208.	-1 -34		2 2		59 -10
+209.	-1 -34		2 2		0.45 -12.973
+210.	-1 -34		59 -10		0.45 -12.973
+211.	78 3		-23 0.5		2 2
+212.	78 3		-23 0.5		59 -10
+213.	78 3		-23 0.5		0.45 -12.973
+214.	78 3		2 2		59 -10
+215.	78 3		2 2		0.45 -12.973
+216.	78 3		59 -10		0.45 -12.973
+217.	-23 0.5		2 2		59 -10
+218.	-23 0.5		2 2		0.45 -12.973
+219.	-23 0.5		59 -10		0.45 -12.973
+220.	2 2		59 -10		0.45 -12.973
+1.	This is not an acute-angled triangle.
+2.	This is not an acute-angled triangle.
+3.	This is not an acute-angled triangle.
+4.	This is not an acute-angled triangle.
+5.	This is not an acute-angled triangle.
+6.	This is not an acute-angled triangle.
+7.	This is not an acute-angled triangle.
+8.	This is not an acute-angled triangle.
+9.	This is not an acute-angled triangle.
+10.	This is not an acute-angled triangle.
+11.	This is not an acute-angled triangle.
+12.	This is not an acute-angled triangle.
+13.	This is not an acute-angled triangle.
+14.	This is not an acute-angled triangle.
+15.	This is an acute-angled triangle.
+16.	This is not an acute-angled triangle.
+17.	This is not an acute-angled triangle.
+18.	This is not an acute-angled triangle.
+19.	This is not an acute-angled triangle.
+20.	This is not an acute-angled triangle.
+21.	This is not an acute-angled triangle.
+22.	This is not an acute-angled triangle.
+23.	This is not an acute-angled triangle.
+24.	This is not an acute-angled triangle.
+25.	This is not an acute-angled triangle.
+26.	This is not an acute-angled triangle.
+27.	This is not an acute-angled triangle.
+28.	This is not an acute-angled triangle.
+29.	This is not an acute-angled triangle.
+30.	This is not an acute-angled triangle.
+31.	This is not an acute-angled triangle.
+32.	This is not an acute-angled triangle.
+33.	This is not an acute-angled triangle.
+34.	This is not an acute-angled triangle.
+35.	This is an acute-angled triangle.
+36.	This is not an acute-angled triangle.
+37.	This is not an acute-angled triangle.
+38.	This is an acute-angled triangle.
+39.	This is not an acute-angled triangle.
+40.	This is an acute-angled triangle.
+41.	This is not an acute-angled triangle.
+42.	This is not an acute-angled triangle.
+43.	This is an acute-angled triangle.
+44.	This is not an acute-angled triangle.
+45.	This is an acute-angled triangle.
+46.	This is not an acute-angled triangle.
+47.	This is not an acute-angled triangle.
+48.	This is not an acute-angled triangle.
+49.	This is not an acute-angled triangle.
+50.	This is not an acute-angled triangle.
+51.	This is not an acute-angled triangle.
+52.	This is not an acute-angled triangle.
+53.	This is not an acute-angled triangle.
+54.	This is an acute-angled triangle.
+55.	This is not an acute-angled triangle.
+56.	This is not an acute-angled triangle.
+57.	This is not an acute-angled triangle.
+58.	This is not an acute-angled triangle.
+59.	This is not an acute-angled triangle.
+60.	This is an acute-angled triangle.
+61.	This is not an acute-angled triangle.
+62.	This is not an acute-angled triangle.
+63.	This is not an acute-angled triangle.
+64.	This is not an acute-angled triangle.
+65.	This is not an acute-angled triangle.
+66.	This is not an acute-angled triangle.
+67.	This is an acute-angled triangle.
+68.	This is not an acute-angled triangle.
+69.	This is not an acute-angled triangle.
+70.	This is not an acute-angled triangle.
+71.	This is not an acute-angled triangle.
+72.	This is not an acute-angled triangle.
+73.	This is not an acute-angled triangle.
+74.	This is an acute-angled triangle.
+75.	This is not an acute-angled triangle.
+76.	This is not an acute-angled triangle.
+77.	This is not an acute-angled triangle.
+78.	This is not an acute-angled triangle.
+79.	This is an acute-angled triangle.
+80.	This is not an acute-angled triangle.
+81.	This is not an acute-angled triangle.
+82.	This is not an acute-angled triangle.
+83.	This is an acute-angled triangle.
+84.	This is not an acute-angled triangle.
+85.	This is not an acute-angled triangle.
+86.	This is not an acute-angled triangle.
+87.	This is an acute-angled triangle.
+88.	This is not an acute-angled triangle.
+89.	This is an acute-angled triangle.
+90.	This is not an acute-angled triangle.
+91.	This is not an acute-angled triangle.
+92.	This is not an acute-angled triangle.
+93.	This is not an acute-angled triangle.
+94.	This is an acute-angled triangle.
+95.	This is not an acute-angled triangle.
+96.	This is not an acute-angled triangle.
+97.	This is not an acute-angled triangle.
+98.	This is not an acute-angled triangle.
+99.	This is not an acute-angled triangle.
+100.	This is not an acute-angled triangle.
+101.	This is not an acute-angled triangle.
+102.	This is not an acute-angled triangle.
+103.	This is not an acute-angled triangle.
+104.	This is an acute-angled triangle.
+105.	This is not an acute-angled triangle.
+106.	This is not an acute-angled triangle.
+107.	This is not an acute-angled triangle.
+108.	This is not an acute-angled triangle.
+109.	This is not an acute-angled triangle.
+110.	This is not an acute-angled triangle.
+111.	This is an acute-angled triangle.
+112.	This is not an acute-angled triangle.
+113.	This is not an acute-angled triangle.
+114.	This is not an acute-angled triangle.
+115.	This is not an acute-angled triangle.
+116.	This is not an acute-angled triangle.
+117.	This is an acute-angled triangle.
+118.	This is not an acute-angled triangle.
+119.	This is an acute-angled triangle.
+120.	This is not an acute-angled triangle.
+121.	This is not an acute-angled triangle.
+122.	This is not an acute-angled triangle.
+123.	This is not an acute-angled triangle.
+124.	This is not an acute-angled triangle.
+125.	This is not an acute-angled triangle.
+126.	This is not an acute-angled triangle.
+127.	This is an acute-angled triangle.
+128.	This is an acute-angled triangle.
+129.	This is not an acute-angled triangle.
+130.	This is not an acute-angled triangle.
+131.	This is not an acute-angled triangle.
+132.	This is not an acute-angled triangle.
+133.	This is not an acute-angled triangle.
+134.	This is not an acute-angled triangle.
+135.	This is not an acute-angled triangle.
+136.	This is not an acute-angled triangle.
+137.	This is not an acute-angled triangle.
+138.	This is not an acute-angled triangle.
+139.	This is not an acute-angled triangle.
+140.	This is not an acute-angled triangle.
+141.	This is not an acute-angled triangle.
+142.	This is not an acute-angled triangle.
+143.	This is not an acute-angled triangle.
+144.	This is an acute-angled triangle.
+145.	This is not an acute-angled triangle.
+146.	This is not an acute-angled triangle.
+147.	This is an acute-angled triangle.
+148.	This is not an acute-angled triangle.
+149.	This is an acute-angled triangle.
+150.	This is not an acute-angled triangle.
+151.	This is not an acute-angled triangle.
+152.	This is an acute-angled triangle.
+153.	This is not an acute-angled triangle.
+154.	This is not an acute-angled triangle.
+155.	This is not an acute-angled triangle.
+156.	This is not an acute-angled triangle.
+157.	This is not an acute-angled triangle.
+158.	This is not an acute-angled triangle.
+159.	This is not an acute-angled triangle.
+160.	This is not an acute-angled triangle.
+161.	This is not an acute-angled triangle.
+162.	This is not an acute-angled triangle.
+163.	This is an acute-angled triangle.
+164.	This is not an acute-angled triangle.
+165.	This is not an acute-angled triangle.
+166.	This is not an acute-angled triangle.
+167.	This is not an acute-angled triangle.
+168.	This is an acute-angled triangle.
+169.	This is not an acute-angled triangle.
+170.	This is not an acute-angled triangle.
+171.	This is not an acute-angled triangle.
+172.	This is not an acute-angled triangle.
+173.	This is not an acute-angled triangle.
+174.	This is not an acute-angled triangle.
+175.	This is not an acute-angled triangle.
+176.	This is not an acute-angled triangle.
+177.	This is not an acute-angled triangle.
+178.	This is an acute-angled triangle.
+179.	This is not an acute-angled triangle.
+180.	This is not an acute-angled triangle.
+181.	This is not an acute-angled triangle.
+182.	This is not an acute-angled triangle.
+183.	This is not an acute-angled triangle.
+184.	This is not an acute-angled triangle.
+185.	This is not an acute-angled triangle.
+186.	This is not an acute-angled triangle.
+187.	This is an acute-angled triangle.
+188.	This is not an acute-angled triangle.
+189.	This is an acute-angled triangle.
+190.	This is not an acute-angled triangle.
+191.	This is not an acute-angled triangle.
+192.	This is an acute-angled triangle.
+193.	This is not an acute-angled triangle.
+194.	This is not an acute-angled triangle.
+195.	This is an acute-angled triangle.
+196.	This is not an acute-angled triangle.
+197.	This is an acute-angled triangle.
+198.	This is an acute-angled triangle.
+199.	This is not an acute-angled triangle.
+200.	This is an acute-angled triangle.
+201.	This is not an acute-angled triangle.
+202.	This is not an acute-angled triangle.
+203.	This is not an acute-angled triangle.
+204.	This is not an acute-angled triangle.
+205.	This is an acute-angled triangle.
+206.	This is not an acute-angled triangle.
+207.	This is not an acute-angled triangle.
+208.	This is an acute-angled triangle.
+209.	This is not an acute-angled triangle.
+210.	This is not an acute-angled triangle.
+211.	This is not an acute-angled triangle.
+212.	This is not an acute-angled triangle.
+213.	This is not an acute-angled triangle.
+214.	This is not an acute-angled triangle.
+215.	This is not an acute-angled triangle.
+216.	This is not an acute-angled triangle.
+217.	This is not an acute-angled triangle.
+218.	This is an acute-angled triangle.
+219.	This is not an acute-angled triangle.
+220.	This is an acute-angled triangle.
+number of acute-angled triangles:39
