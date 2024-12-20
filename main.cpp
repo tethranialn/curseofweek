@@ -102,6 +102,7 @@ void main(void)
 	{
 		cout << "this file is not open or does not exist. please, restart the programm";
 		fprotocol << "this file is not open or does not exist. please, restart the programm";
+		fresult << "this file is not open or does not exist. please, restart the programm";
 		return;
 	}
 	//checking number of points 
@@ -134,18 +135,19 @@ void main(void)
 	}
 	if (big_number != 0)
 	{
-		cout << "specified number of points (" << big_number << ") has been reduced to " << N << '\n';
+		//cout << "specified number of points (" << big_number << ") has been reduced to " << N << '\n';
 		fprotocol << "specified number of points (" << big_number << ") has been reduced to " << N << '\n';
 	}
-	cout << "readed number of points: " << number << '\n';
-	cout << "real number of points: " << real_number << '\n';
+	//cout << "readed number of points: " << number << '\n';
+	//cout << "real number of points: " << real_number << '\n';
 	fprotocol << "readed number of points: " << number << '\n';
 	fprotocol << "real number of points: " << real_number << '\n';
 	//process
 	pointsCreation(x, y, XP, YP, real_number, index);
 	process(XP, YP, result, index);
-	cout << "number of acute-angled triangles:" << result;
+	//cout << "number of acute-angled triangles:" << result;
 	fprotocol << "number of acute-angled triangles:" << result;
+	fresult << "Task: Find all acute-angled triangles formed by any three points\n";
 	fresult << "number of acute-angled triangles:" << result << '\n';
 	fresult << "acute-angled triangles:\n";
 	for (i = 0; i < index; i++)
@@ -225,7 +227,7 @@ int readFile(fstream& inputFile, float x[N], float y[N], int& big_number, int& r
 					{
 						x[i] = tmp_x;
 						y[i] = tmp_y;
-						cout << i+1 << ".\t" << x[i] << ' ' << y[i] << '\n';
+						//cout << i+1 << ".\t" << x[i] << ' ' << y[i] << '\n';
 						fprotocol << i + 1 << ".\t" << x[i] << ' ' << y[i] << '\n';
 						i++;
 						real_number = i;
@@ -259,9 +261,11 @@ void pointsCreation(float x[N], float y[N], long double XP[100000][3], long doub
 			}
 		}
 	}
-	cout << endl;
+	//cout << endl;
+	fresult << "formed triples of coordinates:\n";
 	for (i = 0; i < index; i++) {
-		cout << i+1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
+		//cout << i+1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
+		fresult << i + 1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
 		fprotocol << i + 1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
 	}
 	return;
@@ -287,14 +291,14 @@ int process(long double XP[10000][3], long double YP[10000][3], int& result, int
 			y = z;
 		}
 		if (x * x + y * y > longest * longest) {
-			cout << i + 1 << ".\t" << "This is an acute-angled triangle.\n";
+			//cout << i + 1 << ".\t" << "This is an acute-angled triangle.\n";
 			fprotocol << i + 1 << ".\t" << "This is an acute-angled triangle.\n";
 			P[i] = true;
 			result++;
 		}
 		else
 		{
-			cout << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
+			//cout << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
 			fprotocol << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
 			P[i] = false;
 		}
