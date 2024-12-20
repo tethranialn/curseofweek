@@ -16,6 +16,7 @@ there is no paired coordinate for x (67)
 end of inputFile
 readed number of points: 20
 real number of points: 12
+formed triples of coordinates:
 1.	872 -98		0 1		78 7
 2.	872 -98		0 1		-93 0.9084
 3.	872 -98		0 1		56 0.45
@@ -236,224 +237,1106 @@ real number of points: 12
 218.	-23 0.5		2 2		0.45 -12.973
 219.	-23 0.5		59 -10		0.45 -12.973
 220.	2 2		59 -10		0.45 -12.973
+
+Analyzing triangles...
+
+a: 877
+b: 78
+c: 800
 1.	This is not an acute-angled triangle.
+
+a: 877
+b: 93
+c: 970
 2.	This is not an acute-angled triangle.
+
+a: 877
+b: 56
+c: 821
 3.	This is not an acute-angled triangle.
+
+a: 877
+b: 2
+c: 875
 4.	This is not an acute-angled triangle.
+
+a: 877
+b: 35
+c: 875
 5.	This is not an acute-angled triangle.
+
+a: 877
+b: 78
+c: 800
 6.	This is not an acute-angled triangle.
+
+a: 877
+b: 23
+c: 900
 7.	This is not an acute-angled triangle.
+
+a: 877
+b: 2
+c: 875
 8.	This is not an acute-angled triangle.
+
+a: 877
+b: 60
+c: 817
 9.	This is not an acute-angled triangle.
+
+a: 877
+b: 13
+c: 875
 10.	This is not an acute-angled triangle.
+
+a: 800
+b: 171
+c: 970
 11.	This is not an acute-angled triangle.
+
+a: 800
+b: 22
+c: 821
 12.	This is not an acute-angled triangle.
+
+a: 800
+b: 76
+c: 875
 13.	This is not an acute-angled triangle.
+
+a: 800
+b: 89
+c: 875
 14.	This is not an acute-angled triangle.
+
+a: 800
+b: 4
+c: 800
 15.	This is an acute-angled triangle.
+
+a: 800
+b: 101
+c: 900
 16.	This is not an acute-angled triangle.
+
+a: 800
+b: 76
+c: 875
 17.	This is not an acute-angled triangle.
+
+a: 800
+b: 25
+c: 817
 18.	This is not an acute-angled triangle.
+
+a: 800
+b: 80
+c: 875
 19.	This is not an acute-angled triangle.
+
+a: 970
+b: 149
+c: 821
 20.	This is not an acute-angled triangle.
+
+a: 970
+b: 95
+c: 875
 21.	This is not an acute-angled triangle.
+
+a: 970
+b: 98
+c: 875
 22.	This is not an acute-angled triangle.
+
+a: 970
+b: 171
+c: 800
 23.	This is not an acute-angled triangle.
+
+a: 970
+b: 70
+c: 900
 24.	This is not an acute-angled triangle.
+
+a: 970
+b: 95
+c: 875
 25.	This is not an acute-angled triangle.
+
+a: 970
+b: 152
+c: 817
 26.	This is not an acute-angled triangle.
+
+a: 970
+b: 94
+c: 875
 27.	This is not an acute-angled triangle.
+
+a: 821
+b: 54
+c: 875
 28.	This is not an acute-angled triangle.
+
+a: 821
+b: 66
+c: 875
 29.	This is not an acute-angled triangle.
+
+a: 821
+b: 22
+c: 800
 30.	This is not an acute-angled triangle.
+
+a: 821
+b: 79
+c: 900
 31.	This is not an acute-angled triangle.
+
+a: 821
+b: 54
+c: 875
 32.	This is not an acute-angled triangle.
+
+a: 821
+b: 10
+c: 817
 33.	This is not an acute-angled triangle.
+
+a: 821
+b: 57
+c: 875
 34.	This is not an acute-angled triangle.
+
+a: 875
+b: 37
+c: 875
 35.	This is an acute-angled triangle.
+
+a: 875
+b: 76
+c: 800
 36.	This is not an acute-angled triangle.
+
+a: 875
+b: 25
+c: 900
 37.	This is not an acute-angled triangle.
+
+a: 875
+b: 1
+c: 875
 38.	This is an acute-angled triangle.
+
+a: 875
+b: 58
+c: 817
 39.	This is not an acute-angled triangle.
+
+a: 875
+b: 16
+c: 875
 40.	This is an acute-angled triangle.
+
+a: 875
+b: 87
+c: 800
 41.	This is not an acute-angled triangle.
+
+a: 875
+b: 40
+c: 900
 42.	This is not an acute-angled triangle.
+
+a: 875
+b: 36
+c: 875
 43.	This is an acute-angled triangle.
+
+a: 875
+b: 64
+c: 817
 44.	This is not an acute-angled triangle.
+
+a: 875
+b: 21
+c: 875
 45.	This is an acute-angled triangle.
+
+a: 800
+b: 101
+c: 900
 46.	This is not an acute-angled triangle.
+
+a: 800
+b: 76
+c: 875
 47.	This is not an acute-angled triangle.
+
+a: 800
+b: 23
+c: 817
 48.	This is not an acute-angled triangle.
+
+a: 800
+b: 79
+c: 875
 49.	This is not an acute-angled triangle.
+
+a: 900
+b: 25
+c: 875
 50.	This is not an acute-angled triangle.
+
+a: 900
+b: 82
+c: 817
 51.	This is not an acute-angled triangle.
+
+a: 900
+b: 27
+c: 875
 52.	This is not an acute-angled triangle.
+
+a: 875
+b: 58
+c: 817
 53.	This is not an acute-angled triangle.
+
+a: 875
+b: 15
+c: 875
 54.	This is an acute-angled triangle.
+
+a: 817
+b: 58
+c: 875
 55.	This is not an acute-angled triangle.
+
+a: 78
+b: 171
+c: 93
 56.	This is not an acute-angled triangle.
+
+a: 78
+b: 22
+c: 56
 57.	This is not an acute-angled triangle.
+
+a: 78
+b: 76
+c: 2
 58.	This is not an acute-angled triangle.
+
+a: 78
+b: 89
+c: 35
 59.	This is not an acute-angled triangle.
+
+a: 78
+b: 4
+c: 78
 60.	This is an acute-angled triangle.
+
+a: 78
+b: 101
+c: 23
 61.	This is not an acute-angled triangle.
+
+a: 78
+b: 76
+c: 2
 62.	This is not an acute-angled triangle.
+
+a: 78
+b: 25
+c: 60
 63.	This is not an acute-angled triangle.
+
+a: 78
+b: 80
+c: 13
 64.	This is not an acute-angled triangle.
+
+a: 93
+b: 149
+c: 56
 65.	This is not an acute-angled triangle.
+
+a: 93
+b: 95
+c: 2
 66.	This is not an acute-angled triangle.
+
+a: 93
+b: 98
+c: 35
 67.	This is an acute-angled triangle.
+
+a: 93
+b: 171
+c: 78
 68.	This is not an acute-angled triangle.
+
+a: 93
+b: 70
+c: 23
 69.	This is not an acute-angled triangle.
+
+a: 93
+b: 95
+c: 2
 70.	This is not an acute-angled triangle.
+
+a: 93
+b: 152
+c: 60
 71.	This is not an acute-angled triangle.
+
+a: 93
+b: 94
+c: 13
 72.	This is not an acute-angled triangle.
+
+a: 56
+b: 54
+c: 2
 73.	This is not an acute-angled triangle.
+
+a: 56
+b: 66
+c: 35
 74.	This is an acute-angled triangle.
+
+a: 56
+b: 22
+c: 78
 75.	This is not an acute-angled triangle.
+
+a: 56
+b: 79
+c: 23
 76.	This is not an acute-angled triangle.
+
+a: 56
+b: 54
+c: 2
 77.	This is not an acute-angled triangle.
+
+a: 56
+b: 10
+c: 60
 78.	This is not an acute-angled triangle.
+
+a: 56
+b: 57
+c: 13
 79.	This is an acute-angled triangle.
+
+a: 2
+b: 37
+c: 35
 80.	This is not an acute-angled triangle.
+
+a: 2
+b: 76
+c: 78
 81.	This is not an acute-angled triangle.
+
+a: 2
+b: 25
+c: 23
 82.	This is not an acute-angled triangle.
+
+a: 2
+b: 1
+c: 2
 83.	This is an acute-angled triangle.
+
+a: 2
+b: 58
+c: 60
 84.	This is not an acute-angled triangle.
+
+a: 2
+b: 16
+c: 13
 85.	This is not an acute-angled triangle.
+
+a: 35
+b: 87
+c: 78
 86.	This is not an acute-angled triangle.
+
+a: 35
+b: 40
+c: 23
 87.	This is an acute-angled triangle.
+
+a: 35
+b: 36
+c: 2
 88.	This is not an acute-angled triangle.
+
+a: 35
+b: 64
+c: 60
 89.	This is an acute-angled triangle.
+
+a: 35
+b: 21
+c: 13
 90.	This is not an acute-angled triangle.
+
+a: 78
+b: 101
+c: 23
 91.	This is not an acute-angled triangle.
+
+a: 78
+b: 76
+c: 2
 92.	This is not an acute-angled triangle.
+
+a: 78
+b: 23
+c: 60
 93.	This is not an acute-angled triangle.
+
+a: 78
+b: 79
+c: 13
 94.	This is an acute-angled triangle.
+
+a: 23
+b: 25
+c: 2
 95.	This is not an acute-angled triangle.
+
+a: 23
+b: 82
+c: 60
 96.	This is not an acute-angled triangle.
+
+a: 23
+b: 27
+c: 13
 97.	This is not an acute-angled triangle.
+
+a: 2
+b: 58
+c: 60
 98.	This is not an acute-angled triangle.
+
+a: 2
+b: 15
+c: 13
 99.	This is not an acute-angled triangle.
+
+a: 60
+b: 58
+c: 13
 100.	This is not an acute-angled triangle.
+
+a: 171
+b: 149
+c: 22
 101.	This is not an acute-angled triangle.
+
+a: 171
+b: 95
+c: 76
 102.	This is not an acute-angled triangle.
+
+a: 171
+b: 98
+c: 89
 103.	This is not an acute-angled triangle.
+
+a: 171
+b: 171
+c: 4
 104.	This is an acute-angled triangle.
+
+a: 171
+b: 70
+c: 101
 105.	This is not an acute-angled triangle.
+
+a: 171
+b: 95
+c: 76
 106.	This is not an acute-angled triangle.
+
+a: 171
+b: 152
+c: 25
 107.	This is not an acute-angled triangle.
+
+a: 171
+b: 94
+c: 80
 108.	This is not an acute-angled triangle.
+
+a: 22
+b: 54
+c: 76
 109.	This is not an acute-angled triangle.
+
+a: 22
+b: 66
+c: 89
 110.	This is not an acute-angled triangle.
+
+a: 22
+b: 22
+c: 4
 111.	This is an acute-angled triangle.
+
+a: 22
+b: 79
+c: 101
 112.	This is not an acute-angled triangle.
+
+a: 22
+b: 54
+c: 76
 113.	This is not an acute-angled triangle.
+
+a: 22
+b: 10
+c: 25
 114.	This is not an acute-angled triangle.
+
+a: 22
+b: 57
+c: 80
 115.	This is not an acute-angled triangle.
+
+a: 76
+b: 37
+c: 89
 116.	This is not an acute-angled triangle.
+
+a: 76
+b: 76
+c: 4
 117.	This is an acute-angled triangle.
+
+a: 76
+b: 25
+c: 101
 118.	This is not an acute-angled triangle.
+
+a: 76
+b: 1
+c: 76
 119.	This is an acute-angled triangle.
+
+a: 76
+b: 58
+c: 25
 120.	This is not an acute-angled triangle.
+
+a: 76
+b: 16
+c: 80
 121.	This is not an acute-angled triangle.
+
+a: 89
+b: 87
+c: 4
 122.	This is not an acute-angled triangle.
+
+a: 89
+b: 40
+c: 101
 123.	This is not an acute-angled triangle.
+
+a: 89
+b: 36
+c: 76
 124.	This is not an acute-angled triangle.
+
+a: 89
+b: 64
+c: 25
 125.	This is not an acute-angled triangle.
+
+a: 89
+b: 21
+c: 80
 126.	This is not an acute-angled triangle.
+
+a: 4
+b: 101
+c: 101
 127.	This is an acute-angled triangle.
+
+a: 4
+b: 76
+c: 76
 128.	This is an acute-angled triangle.
+
+a: 4
+b: 23
+c: 25
 129.	This is not an acute-angled triangle.
+
+a: 4
+b: 79
+c: 80
 130.	This is not an acute-angled triangle.
+
+a: 101
+b: 25
+c: 76
 131.	This is not an acute-angled triangle.
+
+a: 101
+b: 82
+c: 25
 132.	This is not an acute-angled triangle.
+
+a: 101
+b: 27
+c: 80
 133.	This is not an acute-angled triangle.
+
+a: 76
+b: 58
+c: 25
 134.	This is not an acute-angled triangle.
+
+a: 76
+b: 15
+c: 80
 135.	This is not an acute-angled triangle.
+
+a: 25
+b: 58
+c: 80
 136.	This is not an acute-angled triangle.
+
+a: 149
+b: 54
+c: 95
 137.	This is not an acute-angled triangle.
+
+a: 149
+b: 66
+c: 98
 138.	This is not an acute-angled triangle.
+
+a: 149
+b: 22
+c: 171
 139.	This is not an acute-angled triangle.
+
+a: 149
+b: 79
+c: 70
 140.	This is not an acute-angled triangle.
+
+a: 149
+b: 54
+c: 95
 141.	This is not an acute-angled triangle.
+
+a: 149
+b: 10
+c: 152
 142.	This is not an acute-angled triangle.
+
+a: 149
+b: 57
+c: 94
 143.	This is not an acute-angled triangle.
+
+a: 95
+b: 37
+c: 98
 144.	This is an acute-angled triangle.
+
+a: 95
+b: 76
+c: 171
 145.	This is not an acute-angled triangle.
+
+a: 95
+b: 25
+c: 70
 146.	This is not an acute-angled triangle.
+
+a: 95
+b: 1
+c: 95
 147.	This is an acute-angled triangle.
+
+a: 95
+b: 58
+c: 152
 148.	This is not an acute-angled triangle.
+
+a: 95
+b: 16
+c: 94
 149.	This is an acute-angled triangle.
+
+a: 98
+b: 87
+c: 171
 150.	This is not an acute-angled triangle.
+
+a: 98
+b: 40
+c: 70
 151.	This is not an acute-angled triangle.
+
+a: 98
+b: 36
+c: 95
 152.	This is an acute-angled triangle.
+
+a: 98
+b: 64
+c: 152
 153.	This is not an acute-angled triangle.
+
+a: 98
+b: 21
+c: 94
 154.	This is not an acute-angled triangle.
+
+a: 171
+b: 101
+c: 70
 155.	This is not an acute-angled triangle.
+
+a: 171
+b: 76
+c: 95
 156.	This is not an acute-angled triangle.
+
+a: 171
+b: 23
+c: 152
 157.	This is not an acute-angled triangle.
+
+a: 171
+b: 79
+c: 94
 158.	This is not an acute-angled triangle.
+
+a: 70
+b: 25
+c: 95
 159.	This is not an acute-angled triangle.
+
+a: 70
+b: 82
+c: 152
 160.	This is not an acute-angled triangle.
+
+a: 70
+b: 27
+c: 94
 161.	This is not an acute-angled triangle.
+
+a: 95
+b: 58
+c: 152
 162.	This is not an acute-angled triangle.
+
+a: 95
+b: 15
+c: 94
 163.	This is an acute-angled triangle.
+
+a: 152
+b: 58
+c: 94
 164.	This is not an acute-angled triangle.
+
+a: 54
+b: 37
+c: 66
 165.	This is not an acute-angled triangle.
+
+a: 54
+b: 76
+c: 22
 166.	This is not an acute-angled triangle.
+
+a: 54
+b: 25
+c: 79
 167.	This is not an acute-angled triangle.
+
+a: 54
+b: 1
+c: 54
 168.	This is an acute-angled triangle.
+
+a: 54
+b: 58
+c: 10
 169.	This is not an acute-angled triangle.
+
+a: 54
+b: 16
+c: 57
 170.	This is not an acute-angled triangle.
+
+a: 66
+b: 87
+c: 22
 171.	This is not an acute-angled triangle.
+
+a: 66
+b: 40
+c: 79
 172.	This is not an acute-angled triangle.
+
+a: 66
+b: 36
+c: 54
 173.	This is not an acute-angled triangle.
+
+a: 66
+b: 64
+c: 10
 174.	This is not an acute-angled triangle.
+
+a: 66
+b: 21
+c: 57
 175.	This is not an acute-angled triangle.
+
+a: 22
+b: 101
+c: 79
 176.	This is not an acute-angled triangle.
+
+a: 22
+b: 76
+c: 54
 177.	This is not an acute-angled triangle.
+
+a: 22
+b: 23
+c: 10
 178.	This is an acute-angled triangle.
+
+a: 22
+b: 79
+c: 57
 179.	This is not an acute-angled triangle.
+
+a: 79
+b: 25
+c: 54
 180.	This is not an acute-angled triangle.
+
+a: 79
+b: 82
+c: 10
 181.	This is not an acute-angled triangle.
+
+a: 79
+b: 27
+c: 57
 182.	This is not an acute-angled triangle.
+
+a: 54
+b: 58
+c: 10
 183.	This is not an acute-angled triangle.
+
+a: 54
+b: 15
+c: 57
 184.	This is not an acute-angled triangle.
+
+a: 10
+b: 58
+c: 57
 185.	This is not an acute-angled triangle.
+
+a: 37
+b: 87
+c: 76
 186.	This is not an acute-angled triangle.
+
+a: 37
+b: 40
+c: 25
 187.	This is an acute-angled triangle.
+
+a: 37
+b: 36
+c: 1
 188.	This is not an acute-angled triangle.
+
+a: 37
+b: 64
+c: 58
 189.	This is an acute-angled triangle.
+
+a: 37
+b: 21
+c: 16
 190.	This is not an acute-angled triangle.
+
+a: 76
+b: 101
+c: 25
 191.	This is not an acute-angled triangle.
+
+a: 76
+b: 76
+c: 1
 192.	This is an acute-angled triangle.
+
+a: 76
+b: 23
+c: 58
 193.	This is not an acute-angled triangle.
+
+a: 76
+b: 79
+c: 16
 194.	This is not an acute-angled triangle.
+
+a: 25
+b: 25
+c: 1
 195.	This is an acute-angled triangle.
+
+a: 25
+b: 82
+c: 58
 196.	This is not an acute-angled triangle.
+
+a: 25
+b: 27
+c: 16
 197.	This is an acute-angled triangle.
+
+a: 1
+b: 58
+c: 58
 198.	This is an acute-angled triangle.
+
+a: 1
+b: 15
+c: 16
 199.	This is not an acute-angled triangle.
+
+a: 58
+b: 58
+c: 16
 200.	This is an acute-angled triangle.
+
+a: 87
+b: 101
+c: 40
 201.	This is not an acute-angled triangle.
+
+a: 87
+b: 76
+c: 36
 202.	This is not an acute-angled triangle.
+
+a: 87
+b: 23
+c: 64
 203.	This is not an acute-angled triangle.
+
+a: 87
+b: 79
+c: 21
 204.	This is not an acute-angled triangle.
+
+a: 40
+b: 25
+c: 36
 205.	This is an acute-angled triangle.
+
+a: 40
+b: 82
+c: 64
 206.	This is not an acute-angled triangle.
+
+a: 40
+b: 27
+c: 21
 207.	This is not an acute-angled triangle.
+
+a: 36
+b: 58
+c: 64
 208.	This is an acute-angled triangle.
+
+a: 36
+b: 15
+c: 21
 209.	This is not an acute-angled triangle.
+
+a: 64
+b: 58
+c: 21
 210.	This is not an acute-angled triangle.
+
+a: 101
+b: 25
+c: 76
 211.	This is not an acute-angled triangle.
+
+a: 101
+b: 82
+c: 23
 212.	This is not an acute-angled triangle.
+
+a: 101
+b: 27
+c: 79
 213.	This is not an acute-angled triangle.
+
+a: 76
+b: 58
+c: 23
 214.	This is not an acute-angled triangle.
+
+a: 76
+b: 15
+c: 79
 215.	This is not an acute-angled triangle.
+
+a: 23
+b: 58
+c: 79
 216.	This is not an acute-angled triangle.
+
+a: 25
+b: 58
+c: 82
 217.	This is not an acute-angled triangle.
+
+a: 25
+b: 15
+c: 27
 218.	This is an acute-angled triangle.
+
+a: 82
+b: 58
+c: 27
 219.	This is not an acute-angled triangle.
+
+a: 58
+b: 58
+c: 15
 220.	This is an acute-angled triangle.
 number of acute-angled triangles:39

@@ -148,8 +148,8 @@ void main(void)
 	//cout << "number of acute-angled triangles:" << result;
 	fprotocol << "number of acute-angled triangles:" << result;
 	fresult << "Task: Find all acute-angled triangles formed by any three points\n";
-	fresult << "number of acute-angled triangles:" << result << '\n';
-	fresult << "acute-angled triangles:\n";
+	//fresult << "number of acute-angled triangles:" << result << '\n';
+	fresult << "Acute-angled triangles:\n";
 	for (i = 0; i < index; i++)
 	{
 		if (P[i] == true)
@@ -262,10 +262,10 @@ void pointsCreation(float x[N], float y[N], long double XP[100000][3], long doub
 		}
 	}
 	//cout << endl;
-	fresult << "formed triples of coordinates:\n";
+	fprotocol << "formed triples of coordinates:\n";
 	for (i = 0; i < index; i++) {
 		//cout << i+1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
-		fresult << i + 1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
+		//fresult << i + 1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
 		fprotocol << i + 1 << ".\t" << XP[i][0] << " " << YP[i][0] << "\t\t" << XP[i][1] << " " << YP[i][1] << "\t\t" << XP[i][2] << " " << YP[i][2] << endl;
 	}
 	return;
@@ -273,12 +273,15 @@ void pointsCreation(float x[N], float y[N], long double XP[100000][3], long doub
 int process(long double XP[10000][3], long double YP[10000][3], int& result, int index)
 {
 	int longest, x, y, z, i;
-	
+	fprotocol << '\n' << "Analyzing triangles...\n";
 	for (i = 0; i < index; i++)
 	{
 		x = distance(XP[i][0], YP[i][0], XP[i][1], YP[i][1]);
+		fprotocol << "\na: " << x;
 		y = distance(XP[i][1], YP[i][1], XP[i][2], YP[i][2]);
+		fprotocol << "\nb: " << y;
 		z = distance(XP[i][2], YP[i][2], XP[i][0], YP[i][0]);
+		fprotocol << "\nc: " << z;
 		longest = z;
 		if (longest < x) {
 			z = longest;
@@ -292,14 +295,14 @@ int process(long double XP[10000][3], long double YP[10000][3], int& result, int
 		}
 		if (x * x + y * y > longest * longest) {
 			//cout << i + 1 << ".\t" << "This is an acute-angled triangle.\n";
-			fprotocol << i + 1 << ".\t" << "This is an acute-angled triangle.\n";
+			fprotocol << '\n' << i + 1 << ".\t" << "This is an acute-angled triangle.\n";
 			P[i] = true;
 			result++;
 		}
 		else
 		{
 			//cout << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
-			fprotocol << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
+			fprotocol << '\n' << i + 1 << ".\t" << "This is not an acute-angled triangle.\n";
 			P[i] = false;
 		}
 	}
