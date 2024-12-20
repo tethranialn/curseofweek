@@ -155,7 +155,7 @@ void main(void)
 		if (P[i] == true)
 		{
 			j++;
-			fresult << setw(2) << left << j << " (" << setw(3) << i << ")." << right << "\t1." << '(' << setw(7) << left << XP[i][0] << ";" << setw(7) << right << YP[i][0] << ')' << "\t2." << '(' << setw(7) << left << XP[i][1] << ";" << setw(7) << right << YP[i][1] << ')' << "\t3." << '(' << setw(7) << left << XP[i][2] << ";" << setw(7) << right << YP[i][2] << ')' << endl;
+			fresult << setw(2) << left << j << " (" << setw(3) << i+1 << ")." << right << "\t1." << '(' << setw(7) << left << XP[i][0] << ";" << setw(7) << right << YP[i][0] << ')' << "\t2." << '(' << setw(7) << left << XP[i][1] << ";" << setw(7) << right << YP[i][1] << ')' << "\t3." << '(' << setw(7) << left << XP[i][2] << ";" << setw(7) << right << YP[i][2] << ')' << endl;
 		}
 	}
 	inputFile.close();
